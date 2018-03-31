@@ -14,64 +14,59 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
   
-
- 
   <dependencies>
   
-<dependency>
-    <groupId>io.cucumber</groupId>
-    <artifactId>cucumber-junit</artifactId>
-    <version>2.3.1</version>
-    <scope>test</scope>
-</dependency>
+	<dependency>
+    	<groupId>io.cucumber</groupId>
+    	<artifactId>cucumber-junit</artifactId>
+    	<version>2.3.1</version>
+    	<scope>test</scope>
+	</dependency>
+
+	<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-core -->
+	<dependency>
+    	<groupId>io.cucumber</groupId>
+    	<artifactId>cucumber-core</artifactId>
+    	<version>2.4.0</version>
+	</dependency>
 
 
-<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-core -->
-<dependency>
-    <groupId>io.cucumber</groupId>
-    <artifactId>cucumber-core</artifactId>
-    <version>2.4.0</version>
-</dependency>
+	<!-- https://mvnrepository.com/artifact/io.cucumber/gherkin -->
+	<dependency>
+    	<groupId>io.cucumber</groupId>
+    	<artifactId>gherkin</artifactId>
+    	<version>5.0.0</version>
+	</dependency>
+
+	<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-java -->
+	<dependency>
+    	<groupId>io.cucumber</groupId>
+    	<artifactId>cucumber-java</artifactId>
+    	<version>2.4.0</version>
+	</dependency>
+
+	<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-jvm-deps -->
+	<dependency>
+    	<groupId>io.cucumber</groupId>
+    	<artifactId>cucumber-jvm-deps</artifactId>
+    	<version>1.0.6</version>
+    	<scope>provided</scope>
+	</dependency>
 
 
-<!-- https://mvnrepository.com/artifact/io.cucumber/gherkin -->
-<dependency>
-    <groupId>io.cucumber</groupId>
-    <artifactId>gherkin</artifactId>
-    <version>5.0.0</version>
-</dependency>
+	<!-- https://mvnrepository.com/artifact/io.cucumber/tag-expressions -->
+	<dependency>
+    	<groupId>io.cucumber</groupId>
+    	<artifactId>tag-expressions</artifactId>
+    	<version>1.1.1</version>
+	</dependency>
 
-
-<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-java -->
-<dependency>
-    <groupId>io.cucumber</groupId>
-    <artifactId>cucumber-java</artifactId>
-    <version>2.4.0</version>
-</dependency>
-
-
-<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-jvm-deps -->
-<dependency>
-    <groupId>io.cucumber</groupId>
-    <artifactId>cucumber-jvm-deps</artifactId>
-    <version>1.0.6</version>
-    <scope>provided</scope>
-</dependency>
-
-
-<!-- https://mvnrepository.com/artifact/io.cucumber/tag-expressions -->
-<dependency>
-    <groupId>io.cucumber</groupId>
-    <artifactId>tag-expressions</artifactId>
-    <version>1.1.1</version>
-</dependency>
-
-<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-expressions -->
-<dependency>
-    <groupId>io.cucumber</groupId>
-    <artifactId>cucumber-expressions</artifactId>
-    <version>5.0.13</version>
-</dependency>
+	<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-expressions -->
+	<dependency>
+   		<groupId>io.cucumber</groupId>
+    	<artifactId>cucumber-expressions</artifactId>
+    	<version>5.0.13</version>
+	</dependency>
 
 
   </dependencies>
