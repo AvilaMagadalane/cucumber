@@ -5,6 +5,6 @@ Feature: Search
   Background: 
     Given I am on the homepage
 
-  @smoke
+  @test123
   Scenario: Keyword Search
     When I fill in "search_query_top" with "dress"
