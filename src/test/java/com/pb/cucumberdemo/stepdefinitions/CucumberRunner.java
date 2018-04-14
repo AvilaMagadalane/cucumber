@@ -11,7 +11,7 @@ import org.junit.runner.RunWith;
 		plugin = {"pretty", "html:target/cucumber"},
 		features = {"src/test/resources/features"},
 		monochrome = true,
-		tags = {"@test123"}		
+		tags = {"@smoke"}		
 	 )
  
 public class CucumberRunner 

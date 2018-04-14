@@ -5,6 +5,7 @@ Feature: Search
   Background: 
     Given I am on the homepage
 
-  @test123
+  @smoke
   Scenario: Keyword Search
-    When I fill in "search_query_top" with "dress"
+    When I fill in "Search Textbox" with "dress" on "Home" page
+    Then I press "Search Button" on "Home" page
