@@ -25,8 +25,8 @@ public class Home_Objs
     static
     {
     	homeMap = new HashMap<String, String>();
-    	homeMap.put("SearchTextbox", "search_query_top");
-    	homeMap.put("SearchButton", "submit_search");
+    	homeMap.put("searchtextbox", "search_query_top");
+    	homeMap.put("searchbutton", "submit_search");
     }
     
 	/**

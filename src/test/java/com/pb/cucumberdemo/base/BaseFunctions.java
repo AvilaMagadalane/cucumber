@@ -113,6 +113,21 @@ public class BaseFunctions
 	
 		return locator;
 	}
-             
+    
+	
+	public String getCurrentPage()
+	{
+		String url = driver.getCurrentUrl();
+		String page = "";
+		
+		
+		if(url.contains("my-account"))
+			page = "User";
+		else
+		    page = "Home";
+		    
+		return page;
+		
+	}
 
 }
