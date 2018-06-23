@@ -2,14 +2,17 @@ package com.pb.cucumberdemo.stepdefinitions;
 
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
+import java.util.List;
 
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.ui.Select;
 
 import com.pb.cucumberdemo.base.BaseFunctions;
 import com.pb.cucumberdemo.pageobjs.Home_Objs;
 
+import cucumber.api.DataTable;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -81,5 +84,29 @@ public class FeaturesSD extends BaseFunctions
 	    System.out.print("Heading is:" +heading);
 	    
 	    Assert.assertEquals(pageHeading, heading); 
+	}
+	
+	/**
+	 * @author TGoswami
+	 * @throws InterruptedException 
+	 * @date: 23 June 2018
+	 * @description: This will click button
+	 */
+
+	@Then("^I enter following details$")
+	public void i_enter_following_details(DataTable table) throws InterruptedException 
+	{
+		  List<List<String>> data = table.raw();
+	      System.out.println(data.get(1).get(1)); 
+	      
+	      driver.findElement(By.id("customer_firstname")).sendKeys(data.get(0).get(1));
+	      driver.findElement(By.id("customer_lastname")).sendKeys(data.get(1).get(1));
+	      driver.findElement(By.id("passwd")).sendKeys(data.get(2).get(1));     
+	     
+	      Select daysDrop = new Select(driver.findElement(By.id("days"))); 
+	      daysDrop.selectByValue(data.get(3).get(1)); 
+	
+	      Select yearDrop = new Select(driver.findElement(By.id("years")));
+	      yearDrop.selectByValue(data.get(4).get(1)); 
 	}
 }

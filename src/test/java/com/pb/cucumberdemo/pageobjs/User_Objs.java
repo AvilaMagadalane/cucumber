@@ -15,6 +15,8 @@ public class User_Objs
     	userMap.put("emailaddresstextbox", "email");
     	userMap.put("passwordtextbox", "passwd");
     	userMap.put("signinbutton", "SubmitLogin");
+    	userMap.put("createanaccountbutton", "SubmitCreate");
+    	userMap.put("registrationemailtextbox", "email_create");
     }
 
 	public String findLocator(String elementName)
