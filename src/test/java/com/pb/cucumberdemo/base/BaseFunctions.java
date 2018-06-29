@@ -123,6 +123,8 @@ public class BaseFunctions
 		
 		if(url.contains("my-account"))
 			page = "User";
+		if(url.contains("controller=contact"))
+			page = "Contact";
 		else
 		    page = "Home";
 		    

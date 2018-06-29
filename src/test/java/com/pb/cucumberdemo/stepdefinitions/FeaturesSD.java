@@ -109,4 +109,13 @@ public class FeaturesSD extends BaseFunctions
 	      Select yearDrop = new Select(driver.findElement(By.id("years")));
 	      yearDrop.selectByValue(data.get(4).get(1)); 
 	}
+	
+	
+	@When("^I fill in \"([^\"]*)\" with:$")
+	public void i_fill_in_with(String elementName, String messageText) throws ClassNotFoundException, IllegalAccessException, IllegalArgumentException, InvocationTargetException, InstantiationException, NoSuchMethodException, SecurityException 
+	{
+		String page = base.getCurrentPage();
+		String locator = base.getLocator(page, elementName);	
+		base.getElementType(locator).sendKeys(messageText);
+	}
 }

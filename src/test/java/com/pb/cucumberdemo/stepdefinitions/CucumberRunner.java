@@ -10,7 +10,7 @@ import org.junit.runner.RunWith;
 		features = {"src/test/resources/features"},
 		glue={"com.pb.cucumberdemo.stepdefinitions"},
 		monochrome = true,
-		tags = {"@register"},
+		tags = {"@test123"},
 		dryRun = false,
 		strict = true
 		)

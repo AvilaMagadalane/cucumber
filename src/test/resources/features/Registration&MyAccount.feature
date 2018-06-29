@@ -1,10 +1,11 @@
+@userflow
 Feature: Registration, Login and MyAccount
 
   Background:
     Given I am on the homepage
     And I follow "Sign in"
   
-  @smoke
+  @regression
   Scenario Outline: Verify Login Functionality
     And I fill "email address textbox" with "<email>"
     And I fill "password textbox" with "<password>"
@@ -16,7 +17,7 @@ Feature: Registration, Login and MyAccount
       | goswami.tarun77@gmail.com | test1234 | MY ACCOUNT     |
       | wrongusername             | test     | AUTHENTICATION |
 
-  @register
+  @regression @smoke
   Scenario: Create New User
     And I fill "registration email textbox" with "goswami.tarun77+1@gmail.com"
     Then I click "create an account button"
