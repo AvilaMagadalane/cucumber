@@ -119,15 +119,14 @@ public class BaseFunctions
 	{
 		String url = driver.getCurrentUrl();
 		String page = "";
-		
-		
+				
 		if(url.contains("my-account"))
 			page = "User";
-		if(url.contains("controller=contact"))
+		else if(url.contains("controller=contact"))
 			page = "Contact";
 		else
 		    page = "Home";
-		    
+				    
 		return page;
 		
 	}

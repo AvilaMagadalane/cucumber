@@ -41,8 +41,10 @@ public class FeaturesSD extends BaseFunctions
 	public void i_fill_in_with_on_page(String elementName, String elementValue) throws ClassNotFoundException, IllegalAccessException, IllegalArgumentException, InvocationTargetException, InstantiationException, NoSuchMethodException, SecurityException
 	{
 		String page = base.getCurrentPage();
+
 		String locator = base.getLocator(page, elementName);	
 		base.getElementType(locator).sendKeys(elementValue);
+		
 	}
 		
 	/**
@@ -80,9 +82,7 @@ public class FeaturesSD extends BaseFunctions
 	@Then("^I should see \"([^\"]*)\" heading$")
 	public void i_should_see_heading(String pageHeading) 
 	{
-	    String heading = driver.findElement(By.tagName("h1")).getText();
-	    System.out.print("Heading is:" +heading);
-	    
+	    String heading = driver.findElement(By.tagName("h1")).getText();	    
 	    Assert.assertEquals(pageHeading, heading); 
 	}
 	
@@ -97,7 +97,6 @@ public class FeaturesSD extends BaseFunctions
 	public void i_enter_following_details(DataTable table) throws InterruptedException 
 	{
 		  List<List<String>> data = table.raw();
-	      System.out.println(data.get(1).get(1)); 
 	      
 	      driver.findElement(By.id("customer_firstname")).sendKeys(data.get(0).get(1));
 	      driver.findElement(By.id("customer_lastname")).sendKeys(data.get(1).get(1));

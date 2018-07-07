@@ -12,9 +12,9 @@ public class User_Objs
     static
     {
     	userMap = new HashMap<String, String>();
-    	userMap.put("emailaddresstextbox", "email");
-    	userMap.put("passwordtextbox", "passwd");
-    	userMap.put("signinbutton", "SubmitLogin");
+    	userMap.put("emailaddress", "email");
+    	userMap.put("password", "passwd");
+    	userMap.put("signin", "SubmitLogin");
     	userMap.put("createanaccountbutton", "SubmitCreate");
     	userMap.put("registrationemailtextbox", "email_create");
     	userMap.put("registerbutton", "submitAccount");

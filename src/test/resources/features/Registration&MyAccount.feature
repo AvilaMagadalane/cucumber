@@ -1,15 +1,15 @@
 @userflow
 Feature: Registration, Login and MyAccount
 
-  Background:
+  Background: 
     Given I am on the homepage
     And I follow "Sign in"
-  
-  @regression
+
+  @regression @testing
   Scenario Outline: Verify Login Functionality
-    And I fill "email address textbox" with "<email>"
-    And I fill "password textbox" with "<password>"
-    And I click "sign in button"
+    And I fill "email address" with "<email>"
+    And I fill "password1" with "<password>"
+    And I click "sign in"
     Then I should see "<heading>" heading
 
     Examples: 
@@ -17,7 +17,7 @@ Feature: Registration, Login and MyAccount
       | goswami.tarun77@gmail.com | test1234 | MY ACCOUNT     |
       | wrongusername             | test     | AUTHENTICATION |
 
-  @regression @smoke
+  @regression @testing
   Scenario: Create New User
     And I fill "registration email textbox" with "goswami.tarun77+1@gmail.com"
     Then I click "create an account button"

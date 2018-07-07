@@ -8,7 +8,7 @@ Feature: As an Ecommerce store owner,
     Given I am on the homepage
     And I follow "Contact us"
 
-  @regression @test123
+  @regression @testing123
   Scenario: Fill in Contact Us form
     When I fill "email address" with "goswami.tarun77"
     And I fill in "message" with:
