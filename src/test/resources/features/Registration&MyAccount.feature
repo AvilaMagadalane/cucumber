@@ -19,7 +19,7 @@ Feature: Registration, Login and MyAccount
 
   @regression @testing
   Scenario: Create New User
-    And I fill "registration email textbox" with "goswami.tarun77+1@gmail.com"
+    When I fill "registration email textbox" with "goswami.tarun77+1@gmail.com"
     Then I click "create an account button"
     And I enter following details
       | First Name | Tarun    |

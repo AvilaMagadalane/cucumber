@@ -29,6 +29,7 @@ public class FeaturesSD extends BaseFunctions
 	public void i_am_on_the_homepage()
 	{
 		driver.get("http://automationpractice.com/index.php");
+
 	}
 
 	/**
@@ -43,8 +44,7 @@ public class FeaturesSD extends BaseFunctions
 		String page = base.getCurrentPage();
 
 		String locator = base.getLocator(page, elementName);	
-		base.getElementType(locator).sendKeys(elementValue);
-		
+		base.getElementType(locator).sendKeys(elementValue);	
 	}
 		
 	/**
