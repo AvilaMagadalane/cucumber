@@ -4,7 +4,7 @@ Fonctionnalité: Chercher
   Je veux chercher sur le site
 
 	Contexte:
-	Étant donné que je suis sur la page d'accueil
+	Étant donnéque que je suis sur la page d'accueil
 
   @smoke
   Scénario: Recherche par mot clé

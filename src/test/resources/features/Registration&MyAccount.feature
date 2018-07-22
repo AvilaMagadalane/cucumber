@@ -2,8 +2,8 @@
 Feature: Registration, Login and MyAccount
 
   Background: 
-    Given I am on the homepage
-    And I follow "Sign in"
+    Given I am on the home page
+    And I follow "Sign in" link
 
   @regression @testing
   Scenario Outline: Verify Login Functionality

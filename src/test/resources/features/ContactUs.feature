@@ -5,8 +5,8 @@ Feature: As an Ecommerce store owner,
   I want customer are able to contact me in case of any query
 
   Background: 
-    Given I am on the homepage
-    And I follow "Contact us"
+    Given I am on the home page
+    And I follow "Contact us" link
 
   @regression @testing123
   Scenario: Fill in Contact Us form
@@ -20,14 +20,3 @@ Feature: As an Ecommerce store owner,
       Thanks,
       Tarun Goswami
       """
-
-  @regression @smoke
-  Scenario Outline: Title of your scenario outline
-    Given I want to write a step with <name>
-    When I check for the <value> in step
-    Then I verify the <status> in step
-
-    Examples: 
-      | name  | value | status  |
-      | name1 |     5 | success |
-      | name2 |     7 | Fail    |
