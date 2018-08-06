@@ -8,7 +8,8 @@ Feature: As an Ecommerce store owner,
     Given I am on the home page
     And I follow "Contact us" link
 
-  @regression @testing123
+  # Doc String Example
+  @regression
   Scenario: Fill in Contact Us form
     When I fill "email address" with "goswami.tarun77"
     And I fill in "message" with:
@@ -20,3 +21,22 @@ Feature: As an Ecommerce store owner,
       Thanks,
       Tarun Goswami
       """
+
+  # Combining Scenario Outline and Doc String
+  @regression @testdoc
+  Scenario Outline: Fill in Email form
+    When I fill "email address" with "<email>"
+    And I fill in "message" with:
+      """
+      Dear <user>,
+      
+      Thank you for applying for Job of <post>, we will get back to you soon.
+      
+      Thanks,
+      Team HR
+      """
+
+    Examples: 
+      | email                     | user          | post    |
+      | goswami.tarun77@gmail.com | Tarun Goswami | QA      |
+      | manish.kumar@gmail.com    | Manish Kumar  | IT Head |

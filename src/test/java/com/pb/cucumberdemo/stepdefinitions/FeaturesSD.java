@@ -2,6 +2,10 @@ package com.pb.cucumberdemo.stepdefinitions;
 
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Calendar;
+import java.util.Date;
 import java.util.List;
 
 import org.junit.Assert;
@@ -13,6 +17,7 @@ import com.pb.cucumberdemo.base.BaseFunctions;
 import com.pb.cucumberdemo.pageobjs.Home_Objs;
 
 import cucumber.api.DataTable;
+import cucumber.api.Format;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -50,6 +55,20 @@ public class FeaturesSD extends BaseFunctions
 		String locator = base.getLocator(page, elementName);	
 		base.getElementType(locator).sendKeys(elementValue);	
 	}
+		
+	
+	@Given("^The date is (\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2})$")
+	 public void the_date_is(@Format("yyyy-MM-dd'T'HH:mm:ss") Date date) {
+	     Date expectedDate = date;
+	     System.out.println("Expected Date:"+expectedDate);
+	 }
+	
+	@Given("^The calender date is (\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2})$")
+	 public void the_date_is(@Format("yyyy-MM-dd'T'HH:mm:ss") Calendar cal) {
+		Calendar expectedDate = cal;
+		 System.out.println("Expected Date:"+expectedDate);
+	 }
+	 
 		
 	/**
 	 * @author TGoswami
@@ -135,6 +154,24 @@ public class FeaturesSD extends BaseFunctions
 	      yearDrop.selectByValue(data.get(4).get(1)); 
 	}
 	
+	
+	/**
+	 * @author TGoswami
+	 * @date: 26 July 2018
+	 * @description: This will compare 2 tables
+	 */
+	
+	@Then("^I gets following response$")
+	public void user_gets_following_response(DataTable expectedResult) 
+	{
+		List<List<String>> actualResult= new ArrayList<List<String>>();
+		actualResult.add( Arrays.asList("Username", "Email"));
+		actualResult.add( Arrays.asList("tgoswami", "goswami.tarun77@gmail.com"));
+		actualResult.add( Arrays.asList("mahuja", "manish.ahuja@gmail.com"));  
+		actualResult.add( Arrays.asList("ssharma", "simran.sharma@gmail.com"));  
+
+		expectedResult.diff(actualResult);
+	}
 	
 	@When("^I fill in \"([^\"]*)\" with:$")
 	public void i_fill_in_with(String elementName, String messageText) throws ClassNotFoundException, IllegalAccessException, IllegalArgumentException, InvocationTargetException, InstantiationException, NoSuchMethodException, SecurityException 

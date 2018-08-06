@@ -24,3 +24,9 @@ Feature: Search
     Then She follow "TOP SELLERS" link
     Then He follow "TOP SELLERS" link
     Then User follow "TOP SELLERS" link
+    
+  #String transformation example
+  @smoke @datetest
+  Scenario: Enter date in different format
+  Given The date is 2012-03-01T06:54:12
+  And The calender date is 2012-03-01T06:54:12
