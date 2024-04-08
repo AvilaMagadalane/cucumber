@@ -1,0 +1,77 @@
+[33mcommit 12d016d7cdb1900d0ed09fdd2356e3ebf0fbb04b[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Mohan Balakrishnan <38653431+mohan-balakrishnan@users.noreply.github.com>
+Date:   Tue Aug 27 11:49:23 2019 +0530
+
+    maven.yml
+
+[33mcommit 128228c7e978310b701761e0d9451b8436fb92bd[m
+Author: goswa <goswa@DESKTOP-RC9AJRR>
+Date:   Tue Aug 7 00:58:32 2018 +0530
+
+    Added Doc String and String Transformation Examples
+
+[33mcommit 5fbdf32a92935cf86f9315ddaa4e4390259d1778[m
+Author: goswa <goswa@DESKTOP-RC9AJRR>
+Date:   Mon Jul 23 03:24:36 2018 +0530
+
+    Added Examples for Optional Capture and Non-Capture Groups
+
+[33mcommit d84d754c86834509bbc4015f2002285666b17401[m
+Author: goswa <goswa@DESKTOP-RC9AJRR>
+Date:   Fri Jul 13 18:45:34 2018 +0530
+
+    Added example for language other than English
+
+[33mcommit 3cce82c9c5700ef7ad80ec7637c842499f410c9f[m
+Author: goswa <goswa@DESKTOP-RC9AJRR>
+Date:   Sat Jul 7 17:59:18 2018 +0530
+
+    Fixed existing issues and updated code for HTML report generation
+
+[33mcommit 4c364be26782c942d129d6c0760a8233f5f806c6[m
+Author: goswa <goswa@DESKTOP-RC9AJRR>
+Date:   Fri Jun 29 19:33:28 2018 +0530
+
+    Added Doc String Example
+
+[33mcommit 0baa18699b4f98ea2b2d3a594c38c9f64dd70f80[m
+Author: goswa <goswa@DESKTOP-RC9AJRR>
+Date:   Sun Jun 24 19:53:15 2018 +0530
+
+    Added Background Example.
+
+[33mcommit 97e4f2572b0953c4de344657d66dd42f3b905860[m
+Author: goswa <goswa@DESKTOP-RC9AJRR>
+Date:   Sat Jun 23 23:18:42 2018 +0530
+
+    Added data table example.
+
+[33mcommit 021cf2fd93b27879de40880e1301300baa89db51[m
+Author: goswa <goswa@DESKTOP-RC9AJRR>
+Date:   Fri Jun 22 01:34:15 2018 +0530
+
+    Updated scenario outline examples
+
+[33mcommit f48d7b30c52ec5b9d933e13afc3a2ad520f94df1[m
+Author: Tarun Goswami <tarun@axelerant.com>
+Date:   Sun Apr 15 04:04:40 2018 +0530
+
+    Added Common Methods and page objects using hashmap
+
+[33mcommit 02d8e44ca48f55cb3e8650ebe4ced86d2c5194d6[m
+Author: Tarun Goswami <tarun@axelerant.com>
+Date:   Sun Apr 1 04:16:08 2018 +0530
+
+    Updated Pom.xml file
+
+[33mcommit 2d44a9dd38d7a8da7d7f4ab3c634e3522ed125c0[m
+Author: Tarun Goswami <tarun@axelerant.com>
+Date:   Sun Apr 1 02:34:35 2018 +0530
+
+    Updated for cucumber io
+
+[33mcommit befa96696819e1bf2f36a9c12397c63bf9960bde[m
+Author: Tarun Goswami <tarun@axelerant.com>
+Date:   Sat Mar 31 15:45:22 2018 +0530
+
+    First Checkout
